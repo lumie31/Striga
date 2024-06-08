@@ -1,5 +1,5 @@
 import React from 'react';
-import Dashboard from '@/components/Dashboard';
+import Dashboard from '@/app/shared/components/Dashboard';
 
 export default async function Home() {
   return <Dashboard />;

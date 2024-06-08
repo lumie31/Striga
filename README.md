@@ -32,4 +32,4 @@ A live copy of the project can be viewed here: https://striga-ecru.vercel.app/
 - Unclear error message from some of the Striga API endpoints
 - Using Doppler for managing environment variables posed some challenges
 
-All the above challenges took some time to work around and to find suitable alternatives
+All the above challenges took some time to work around and to find suitable alternatives but it was a great learning experience.

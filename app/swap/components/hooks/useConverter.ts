@@ -4,7 +4,7 @@ import { useAppContext } from '@/app/shared/context/useAppContext';
 import { convertCurrency } from '@/app/shared/helpers/convertCurrency';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
-import { handleError } from './HandleError';
+import { handleError } from '../../../shared/utils/HandleError';
 
 type Props = {
   exchangeRate?: ExchangeResponse['BTCEUR'];

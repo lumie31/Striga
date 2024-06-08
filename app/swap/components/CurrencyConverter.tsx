@@ -1,7 +1,7 @@
 'use client';
 
 import React, { FC } from 'react';
-import useConverter from '../utils/useConverter';
+import useConverter from './hooks/useConverter';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -23,7 +23,9 @@ const CurrencyConverter: FC<Props> = ({ exchangeRates }) => {
 
   return (
     <div className='bg-white shadow-lg rounded-lg p-8 max-w-lg w-full mt-24'>
-      <h2 className='text-2xl font-bold text-center mb-4'>Swap Currency</h2>
+      <h2 className='text-2xl font-bold text-center mb-4 text-black'>
+        Swap Currency
+      </h2>
       <div className='mb-4'>
         <label
           htmlFor='btcAmount'

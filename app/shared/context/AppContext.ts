@@ -4,7 +4,6 @@ import { createContext, Dispatch, SetStateAction } from 'react';
 
 type AppContextProps = {
   user: Partial<User>;
-  transactionHistory?: any;
   setCurrentUser: Dispatch<SetStateAction<Partial<User>>>;
   accounts: Wallets;
   isModalOpen: boolean;

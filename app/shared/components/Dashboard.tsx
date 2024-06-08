@@ -3,7 +3,7 @@
 import React, { FC } from 'react';
 import Card from './Card';
 import Link from 'next/link';
-import LongCard from '@/components/LongCard';
+import LongCard from '@/app/shared/components/LongCard';
 import useDashboard from './hooks/useDashboard';
 import { Modal } from './Modal';
 import { FiChevronsDown } from 'react-icons/fi';
@@ -23,24 +23,28 @@ const Dashboard = () => {
     <>
       <div className='flex flex-col my-6 mx-3 md:mx-8'>
         <h1 className='font-bold text-black text-xl py-2'>Wallet Balance</h1>
-        <section className='flex justify-between'>
-          <div
-            className='w-5/12 hover:opacity-90 cursor-pointer'
-            onClick={() => onCurrencyTabClicked('EUR')}
-          >
-            <Card
-              currency={accounts.EUR.currency}
-              amount={accounts.EUR.availableBalance.hAmount}
-            />
+        <section className='md:flex md:justify-between'>
+          <div className='md:w-5/12'>
+            <div
+              className='w-full hover:opacity-90 cursor-pointer'
+              onClick={() => onCurrencyTabClicked('EUR')}
+            >
+              <Card
+                currency={accounts.EUR.currency}
+                amount={accounts.EUR.availableBalance.hAmount}
+              />
+            </div>
           </div>
-          <div
-            className='w-5/12 hover:opacity-90 cursor-pointer'
-            onClick={() => onCurrencyTabClicked('BTC')}
-          >
-            <Card
-              currency={accounts.BTC.currency}
-              amount={accounts.BTC.availableBalance.hAmount}
-            />
+          <div className='md:w-5/12 md:ml-4 mt-4 md:mt-0'>
+            <div
+              className='w-full hover:opacity-90 cursor-pointer'
+              onClick={() => onCurrencyTabClicked('BTC')}
+            >
+              <Card
+                currency={accounts.BTC.currency}
+                amount={accounts.BTC.availableBalance.hAmount}
+              />
+            </div>
           </div>
         </section>
       </div>
